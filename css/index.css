@@ -255,9 +255,9 @@ nav ul li.indexone img {
 }
 .tit img.right {
   position: absolute;
-  right: -97px;
+  right: -95px;
   top: 0;
-  height: 194px;
+  height: 189px;
   /*transition: all 2s linear;*/
   -moz-animation: rotate 4s linear infinite;
   -webkit-animation: rotate 4s linear infinite;
