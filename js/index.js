@@ -2,8 +2,8 @@ $(document).ready(function(){
 	//轮播图
 	var mySwiper = new Swiper('.swiper-container',{
 		pagination : '.swiper-pagination',
-	 	speed:100,
-		autoplay:300,
+	 	speed:1000,
+		autoplay:3000,
 		autoplayDisableOnInteraction:false,
 		loop : true,//循环
 		observer:true,
@@ -23,7 +23,7 @@ $(document).ready(function(){
 	      $(".wenzi ul.xuhao li").eq(num).addClass('active');
 	      num++;
 	}      
-	var t=setInterval(move,2000);
+	var t=setInterval(move,3000);
 	var index;
 	$(".wenzi ul.xuhao li").hover(function(){
 		clearInterval(t);
@@ -33,7 +33,7 @@ $(document).ready(function(){
 		_this.find("li").eq(index).show().siblings("li").hide();
 	},function(){
 		num = index + 1;
-		t=setInterval(move,2000);
+		t=setInterval(move,3000);
 	})
 
 
